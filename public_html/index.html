@@ -1,17 +1,403 @@
-<!DOCTYPE html>
-<!--
-Copyright (C) Unimed São Carlos - All Rights Reserved
-Unauthorized copying of this file, via any medium is strictly prohibited
-Proprietary and confidential
-Written by Marcelo S. Silva <marcelo.silva@unimedsaocarlos.com.br>, Jun 2016
--->
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <title>Marcelo Silva</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/color/default.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <script>
+
+            function goHome() {
+
+                document.getElementById("a-home").click();
+            }
+
+            function load() {
+
+                document.getElementById("a-right").click();
+            }
+
+        </script> 
+
     </head>
-    <body>
-        <div>TODO write content</div>
+
+    <body onload="load()">
+        <!-- navbar -->
+        <div class="navbar-wrapper">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="pull-center">
+                        <!-- Responsive navbar -->
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>                                                
+                        <!-- navigation -->
+                        <nav class="nav-collapse collapse">
+                            <ul id="menu-main" class="nav">
+                                <li>
+                                    <a href="#home" id="a-home">
+                                        PRINCIPAL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about">
+                                        SOBRE
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#skills">
+                                        HABILIDADES
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#works">
+                                        TRABALHOS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#hobbies">
+                                        PASSATEMPOS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contacts">
+                                        CONTATOS</a>
+                                </li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header area -->
+        <div id="home" class="header-slider">
+            <header class="clearfix">
+                <div class="logo">
+                    <img src="img/me.png" alt="" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <h1><strong>Marcelo</strong> Silva</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- section: about -->
+        <section id="about" class="section">
+            <div class="container">
+                <h4>Sobre</h4>
+                <div class="row">
+                    <div class="span5 offset1">
+                        <div>
+                            <h2>Um apaixonado por <strong>desenvolvimento de softwares,</strong></h2>
+                            <p>
+                                buscando sempre por aprender e colocar em prática
+                                suas novas habilidades. Na área de desenvolvimento
+                                há mais de 10 anos, procurando apresentar a melhor
+                                solução para problemas apresentados. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="aligncenter">
+                            <img src="img/hobbies/development.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- end section: about -->
+
+        <!-- section: skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h4>Habilidades</h4>
+                <!-- Three columns -->
+                <div class="row">
+                    <div class="span3">
+                        <div class="home-post">
+                            <div class="post-image">
+                                <img class="max-img" src="img/skills/front-end.png" alt=""/>
+                            </div>
+                            <div class="post-meta" style="text-align: center">
+                                <span style="font-size: 25px; font-weight: bold">Front-end</span>
+                            </div>
+                            <div class="entry-content">
+                                <h5><strong>Interfaces ricas</strong></h5>
+                                <p>
+                                    Construir interfaces robustas, rápidas, funcionais, 
+                                    intuitivas e bonitas proporcionando ao usuário uma 
+                                    melhor exeperiência sobre a aplicação.                                    
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="home-post">
+                            <div class="post-image">
+                                <img class="max-img" src="img/skills/back-end.png" alt="" />
+                            </div>
+                            <div class="post-meta" style="text-align: center">
+                                <span style="font-size: 25px; font-weight: bold">Back-end</span>                               
+                            </div>
+                            <div class="entry-content">
+                                <h5><strong>Eficiência</strong></h5>
+                                <p>
+                                    Montar de maneira eficaz a estrutura para que
+                                    siga um padrão bem definido e possa disponibilizar
+                                    as informações com agilidade e desempenho.                                
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="home-post">
+                            <div class="post-image">
+                                <img class="max-img" src="img/skills/frameworks.png" alt="" />
+                            </div>
+                            <div class="post-meta" style="text-align: center">
+                                <span style="font-size: 25px; font-weight: bold">Frameworks</span>                                
+                            </div>
+                            <div class="entry-content">
+                                <h5><strong>Produtividade</strong></h5>
+                                <p>
+                                    Utilizar frameworks é essencial para se conseguir
+                                    produtividade e seguir padrões já definidos,
+                                    facilitando o desenvolvimento e obtendo uma 
+                                    melhor qualidade de código.
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="home-post">
+                            <div class="post-image">
+                                <img class="max-img" src="img/skills/tools.png" alt="" />
+                            </div>
+                            <div class="post-meta" style="text-align: center">                                                               
+                                <span style="font-size: 25px; font-weight: bold">Tools</span>                                
+                            </div>
+                            <div class="entry-content">
+                                <h5><strong>Padronização</strong></h5>
+                                <p>
+                                    Atraves das ferramentas utilizados no ambiente
+                                    de desenvolvimento é possível ter uma padronização
+                                    e uma qualidade muito grande na produção de 
+                                    aplicações.                                     
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: skills -->
+
+        <!-- section: works -->
+        <section id="works" class="section">
+            <div class="container clearfix">
+                <h4>Trabalhos</h4>
+                <!-- portfolio filter -->
+                <div class="row">
+
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/works/image1.png" alt="...">
+                                <div class="carousel-caption">
+                                    <h3 style="color: white"><strong>Image 1</strong></h3>
+                                    <p>Imagem numero 1</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="img/works/image2.png" alt="...">
+                                <div class="carousel-caption">
+                                    <h3 style="color: white"><strong>Image 2</strong></h3>
+                                    <p>Imagem numero 2</p>
+                                </div>
+                            </div> 
+
+                            <div class="item">
+                                <img src="img/works/image3.png" alt="...">
+                                <div class="carousel-caption">
+                                    <h3 style="color: white"><strong>Image 3</strong></h3>
+                                    <p>Imagem numero 3</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control bgdark" 
+                           style="height: 55px"
+                           href="#carousel" 
+                           role="button" 
+                           data-slide="prev">
+
+                            <span class="fa fa-chevron-left" style="font-size: 25px"></span>
+
+                        </a>
+                        <a class="right carousel-control bgdark"
+                           style="height: 55px"
+                           href="#carousel" 
+                           role="button" 
+                           data-slide="next"
+                           id="a-right"
+                           >
+
+                            <span class="fa fa-chevron-right" style="font-size: 25px"></span>                            
+
+                        </a>
+                    </div>
+                </div>                               
+            </div>
+        </section>
+        <!-- end section: works -->
+
+        <!-- section: hobbies -->        
+        <section id="hobbies" class="section yellow">
+            <div class="container">
+                <h4>Passatempos</h4>
+                <!-- Four columns -->
+                <div class="row">
+                    <div class="span3 animated-fast">
+                        <div class="hobby-box">
+                            <img src="img/hobbies/sports.png" alt="" />
+                            <h2 style="color: black">Esportes</h2>
+                            <p>
+                                Durante a semana vou à academia e nos finais de semana
+                                costumo pedalar ou correr.                                
+                                <br />
+                                <br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3 animated">
+                        <div class="hobby-box">
+                            <img src="img/hobbies/medias.png" alt="" />
+                            <h2 style="color: black">Mídias</h2>
+                            <p>
+                                Fanático de música principalmente Blues, Rock e Reggae. 
+                                Gosto de assistir filmes de todos os gêneros e séries.
+                                <br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3 animated-fast">
+                        <div class="hobby-box">
+                            <img src="img/hobbies/recreation.png" alt="" />
+                            <h2 style="color: black">Encontros</h2>
+                            <p>
+                                Aprecio boas amizades, cerveja (e alguns destilados) 
+                                e um bom churrasco.
+                                <br />
+                                <br />
+                                <br />                                                                
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="span3 animated-slow">
+                        <div class="hobby-box">
+                            <img src="img/hobbies/travels.png" alt="" />
+                            <h2 style="color: black">Viagens</h2>
+                            <p>
+                                Viagens são excenciais para renovar as energias,
+                                conhecer lugares e pessoas diferentes.
+                                <br />
+                                <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: hobbies -->                      
+
+        <!-- section: contacts -->
+        <section id="contacts" class="section">
+            <div class="container" style="color: #138d75; font-size: larger">
+                <h4>Contatos</h4>
+                <p>
+                    <span class="fa fa-phone-square" title="Celular"> (16)9.8808-4625</span>
+                </p>
+                <hr />
+                <p>
+                    <span class="fa fa-envelope-square" title="E-mail"> marcelo.suares@yahoo.com.br</span>
+                </p>
+                <hr />
+                <p>
+                    <span class="fa fa-linkedin-square" title="Linkedin"> 
+                        <a href="https://www.linkedin.com/in/marcelosoaressilva" 
+                           target="_blank" 
+                           style="color: #138d75">
+                            marcelosoaressilva
+                        </a>
+                    </span>
+                </p>   
+                <hr />
+                <p>
+                    <span class="fa fa-facebook-square" title="Facebook"> 
+                        <a href="https://www.facebook.com/marcelo.soares.9678067" 
+                           target="_blank"
+                           style="color: #138d75">
+                            marcelo.soares
+                        </a>
+                    </span>
+                </p> 
+            </div>
+        </section>
+        <!-- end section: contacts -->   
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="span6 offset3">                     
+                        <img class="team-thumb img-circle" 
+                             src="img/logo.png" 
+                             style="width: 100px" 
+                             alt="Logo Marcelo" 
+                             />
+                    </div>
+                </div>
+            </div>
+            <!-- ./container -->            
+        </footer>
+        <a class="scrollup" onclick="goHome()" >
+            <i class="fa fa-angle-up fa-3x icon-square icon-bgdark icon-2x"></i>
+        </a>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/inview.js"></script>
+        <script src="js/animate.js"></script>        
+        <script src="js/custom.js"></script>
+
     </body>
 </html>
