@@ -1,2 +1,2 @@
-# personal
+# own
 Project about me
