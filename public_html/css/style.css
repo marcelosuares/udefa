@@ -1578,3 +1578,8 @@ i.icon-white {
     min-width: 200px;
     margin-bottom: 20px
 }
+
+.text-justifiy {
+    
+    text-align: justify;
+}
