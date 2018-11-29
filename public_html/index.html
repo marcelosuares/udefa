@@ -1,417 +1,348 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Marcelo Silva</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">      
         <meta name="description" content="">
         <meta name="author" content="">
-        <link href="css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/color/default.css" rel="stylesheet">
-        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="icon" href=" ">
+        <title>UDEFA - União dos Deficientes Físicos de Araraquara</title>   
 
-        <script>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/custom.css" rel="stylesheet">
 
-            function goHome() {
-
-                document.getElementById("a-home").click();
-            }
-
-            function load() {
-
-                document.getElementById("a-right").click();
-            }
-
-        </script> 
-
+        <!-- Helper Styles -->
+        <link href="css/loaders.css" rel="stylesheet">
+        <link href="css/swiper.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/nivo-lightbox.css">
+        <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+        <!-- Font Awesome Style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-
-    <body onload="load()">
-        <!-- navbar -->
-        <div class="navbar-wrapper">
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="pull-center">
-                        <!-- Responsive navbar -->
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>                                                
-                        <!-- navigation -->
-                        <nav class="nav-collapse collapse">
-                            <ul id="menu-main" class="nav">
-                                <li>
-                                    <a href="#home" id="a-home">
-                                        PRINCIPAL
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#about">
-                                        SOBRE
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#skills">
-                                        HABILIDADES
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#works">
-                                        TRABALHOS
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#hobbies">
-                                        PASSATEMPOS
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#contacts">
-                                        CONTATOS</a>
-                                </li>                                
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <body>
+        <div class="loader loader-bg">
+            <div class="loader-inner ball-clip-rotate-pulse">
+                <div></div>
+                <div></div>
             </div>
         </div>
 
-        <!-- Header area -->
-        <div id="home" class="header-slider">
-            <header class="clearfix">
-                <div class="logo">
-                    <img src="img/me.png" alt="" />
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-toggleable-md mb-4 top-bar navbar-static-top sps sps--abv">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">UDEFA</a>
+                <div class="collapse navbar-collapse" id="navbarCollapse1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="#myCarousel">Principal <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#doacoes">Doações</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#sobre">Sobre</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#estrutura">Estrutura</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#galeria">Galeria</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#contato">Contato</a> </li>
+                    </ul>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="span12">
-                            <h1><strong>Marcelo</strong> Silva</h1>
-                        </div>
-                    </div>
+            </div>
+        </nav>
+
+
+        <!-- Swiper Silder
+            ================================================== --> 
+        <!-- Slider main container -->
+        <div class="swiper-container main-slider" id="myCarousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-bg-position" style="background:url('img/1.jpg')" data-hash="slide1">
+                    <h2>União dos Deficientes Físicos de Araraquara</h2>
                 </div>
-            </header>
+                <div class="swiper-slide slider-bg-position" style="background:url('img/3.jpg')" data-hash="slide2">
+                    <h2 style="color: #333333">Ajude, faça uma doação. </h2>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+            <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
         </div>
 
-        <!-- section: about -->
-        <section id="about" class="section">
+        <!-- Doações
+            ================================================== -->
+        <section class="service-sec" id="doacoes">
             <div class="container">
-                <h4>Sobre</h4>
                 <div class="row">
-                    <div class="span5 offset1">
-                        <div>
-                            <h2>Um apaixonado por <strong>desenvolvimento de softwares,</strong></h2>
-                            <div class="text-justifiy">
+                    <div class="col-md-12">
+                        <div class="heading text-md-center text-xs-center">
+                            <h2><small>Doar faz bem</small>Faça sua doação e ajude ao próximo</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-money" aria-hidden="true"></i>
+                                <h3>Depósito bancário</h3>
                                 <p>
-                                    buscando sempre por eficiencia nas soluções apresentadas.                                                                
-                                    Na área de tecnologia há mais de 10 anos destes 5 em 
-                                    desenvolvimento. 
-                                    Ultimante focado em desenvolver na plataforma JavaEE focado em
-                                    soluções internas para empresas. Já passei por empresas no
-                                    ramo de logistica, tecnologia para rodovias e saúde.
+                                    Banco: <b>_Bradesco</b>, 
+                                    Agencia: <b>_00003</b>, 
+                                    Conta corrente: <b>_0210647-7</b>, 
+                                    Cnpj: <b>_54.921.044/0001-83</b>
                                 </p>
                             </div>
+                            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-tag" aria-hidden="true"></i>
+                                <h3>Doação de roupas</h3>
+                                <p>Recebemos doacões de roupas em bom estado para nosso bazar.</p>
+                            </div>
+                            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h3>Doe seu tempo</h3>
+                                <p>Seja um voluntário e venha fazer parte da nossa história.</p>
+                            </div>
+                            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-bed" aria-hidden="true"></i>
+                                <h3>Doe objetos</h3>
+                                <p>Você pode doar objetos novos ou usados como camas, cadeiras, muletas.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="span6">
-                        <div class="aligncenter">
-                            <img src="img/hobbies/development.png" alt="" />
-                        </div>
-                    </div>
+                    <div class="col-md-4"> <img src="img/side-01.jpg" class="img-fluid" /> </div>
                 </div>
+                <!-- /.row --> 
             </div>
-            <!-- /.container -->
         </section>
-        <!-- end section: about -->
 
-        <!-- section: skills -->
-        <section id="skills" class="section">
+        <!-- Sobre 
+            ================================================== -->
+        <section class="about-sec parallax-section" id="sobre">
             <div class="container">
-                <h4>Habilidades</h4>
-                <!-- Three columns -->
                 <div class="row">
-                    <div class="span3">
-                        <div class="home-post">
-                            <div class="post-image">
-                                <img class="max-img" src="img/skills/front-end.png" alt=""/>
-                            </div>
-                            <div class="post-meta" style="text-align: center">
-                                <span style="font-size: 25px; font-weight: bold">Front-end</span>
-                            </div>
-                            <div class="entry-content text-justifiy">
-                                <p>
-                                    Construir interfaces robustas, rápidas, funcionais, 
-                                    intuitivas e bonitas proporcionando ao usuário uma 
-                                    melhor exeperiência sobre a aplicação. 
-                                    Alisando a melhor forma de se apresentar as
-                                    informações.
-                                </p>                                
-                            </div>
-                        </div>
+                    <div class="col-md-3">
+                        <h2><small>Quem somos nós</small>UDEFA<br></h2>
+                        <h6 style="margin-left: 10px">Cesar augusto ferreira<small><br>Presidente</small><br></h6>
+                        <h6 style="margin-left: 10px"> Geraldo de Almeida<small><br>Vice-presidente</small><br></h6>
                     </div>
-                    <div class="span3">
-                        <div class="home-post">
-                            <div class="post-image">
-                                <img class="max-img" src="img/skills/back-end.png" alt="" />
-                            </div>
-                            <div class="post-meta" style="text-align: center">
-                                <span style="font-size: 25px; font-weight: bold">Back-end</span>                               
-                            </div>
-                            <div class="entry-content text-justifiy">
-                                <p>
-                                    Montar de maneira eficaz a estrutura do projeto para que
-                                    siga um padrão bem definido com o código re-utilizável,
-                                    limpo, e comentado que possa disponibilizar as informações 
-                                    com agilidade.                                       
-                                </p>  
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <p></p>
+                        <p>A UNIÃO DOS DEFICIENTES FÍSICOS DE ARARAQUARA – UDEFA foi fundada em 23 de Junho de 1985 no bairro São José, Araraquara SP, pelo Sr Mota juntamente com alguns estudantes holandeses, com o intuito de amparar as pessoas que possuíam qualquer tipo de deficiência em Araraquara e microrregião. Esse projeto foi apoiado pelo então prefeito Waldemar de Santi.</p>
+                        <p>No ano de 1988, a prefeitura cedeu por cem anos em comodato o terreno em que estão atualmente, onde, construíram uma edícula no qual funcionava o atendimento e o brechó da UDEFA.</p>
+                        <p>Em 1991, por sugestão da prefeitura, o foco de atendimento da instituição passou a serem somente as pessoas com deficiência física. No ano de 1995 foram iniciadas as obras de expansão da UDEFA, pois com o aumento do numero de pessoas atendidas, viu-se a necessidade de um espaço maior para melhor qualidade no atendimento.</p>
                     </div>
-                    <div class="span3">
-                        <div class="home-post">
-                            <div class="post-image">
-                                <img class="max-img" src="img/skills/frameworks.png" alt="" />
-                            </div>
-                            <div class="post-meta" style="text-align: center">
-                                <span style="font-size: 25px; font-weight: bold">Frameworks</span>                                
-                            </div>
-                            <div class="entry-content text-justifiy">
-                                <p>
-                                    Utilizar frameworks é essencial para se conseguir
-                                    maior produtividade e seguir padrões já definidos, 
-                                    deixando o código mais enxuto facilitando o 
-                                    entendimento e obtendo uma melhor qualidade 
-                                    de código.
-                                </p>                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="span3">
-                        <div class="home-post">
-                            <div class="post-image">
-                                <img class="max-img" src="img/skills/tools.png" alt="" />
-                            </div>
-                            <div class="post-meta" style="text-align: center">                                                               
-                                <span style="font-size: 25px; font-weight: bold">Tools</span>                                
-                            </div>
-                            <div class="entry-content text-justifiy">
-                                <p>
-                                    Através das ferramentas utilizadas no ambiente
-                                    de desenvolvimento como ide's, modelagem de DER, 
-                                    diagrama de fluxos, scritps... se tem uma base 
-                                    sólida para construção de aplicações robustas.
-                                </p>                                
-                            </div>
-                        </div>
+                    <div class="col-md-4">     
+                        <p></p>
+                        <p>Em 2014 o brechó da instituição foi transferido para uma instalação ao lado da atual, na Rua Professor Dorival Alves, que por meio de doações e arrecadações recebem roupas em ótimo estado, que com as vendas destas são uma forma de lucro para a instituição. Possuem também um salão que está alugado para uma igreja, cujo aluguel também é revertido para as necessidades da UDEFA.</p>            
+                        <p><b>Visão:</b><br>Ser referência no desenvolvimento de pessoas com deficiência focada na inclusão no mercado de trabalho, buscando apoio do setor público e privado.</p>
+                        <p><b>Missão:</b><br>Desenvolver pessoas com deficiência, por meio de atividades e projetos voltados ao lazer, cultura e esporte, promovendo a inclusão no mercado de trabalho e garantia de direitos.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end section: skills -->
 
-        <!-- section: works -->
-        <section id="works" class="section">
-            <div class="container clearfix">
-                <h4>Trabalhos</h4>
-                <!-- portfolio filter -->
-                <div class="row">
+        <!-- Estrutura
+            ================================================== -->
 
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-                            <li data-target="#carousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/works/image1.png" alt="...">
-                                <div class="carousel-caption">
-                                    <h3 style="color: white"><strong>Integração entre Boostrap, Font Awesome e PrimeFaces</strong></h3>
-                                    <p>Com a integração é possível criar páginas com qualidade</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="img/works/image2.png" alt="...">
-                                <div class="carousel-caption">
-                                    <h3 style="color: white"><strong>jQPlot para gráficos</strong></h3>
-                                    <p>Gerar gráficos com o lib jQPlot que tem muitas opções e ainda é free.</p>
-                                </div>
-                            </div> 
-
-                            <div class="item">
-                                <img src="img/works/image3.png" alt="...">
-                                <div class="carousel-caption">
-                                    <h3 style="color: white"><strong>Jasper Report</strong></h3>
-                                    <p>Ótima ferramenta free para criar relatórios com qualidade.</p>
-                                </div>
-                            </div>   
-
-                            <div class="item">
-                                <img src="img/works/image4.png" alt="...">
-                                <div class="carousel-caption">
-                                    <h3 style="color: white"><strong>Frameworks / ferramentas</strong></h3>
-                                    <p>Alguns frameworks e ferramentas que utilizo no dia à dia.</p>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control bgdark" 
-                           style="height: 55px"
-                           href="#carousel" 
-                           role="button" 
-                           data-slide="prev">
-
-                            <span class="fa fa-chevron-left" style="font-size: 25px"></span>
-
-                        </a>
-                        <a class="right carousel-control bgdark"
-                           style="height: 55px"
-                           href="#carousel" 
-                           role="button" 
-                           data-slide="next"
-                           id="a-right"
-                           >
-
-                            <span class="fa fa-chevron-right" style="font-size: 25px"></span>                            
-
-                        </a>
-                    </div>
-                </div>                               
-            </div>
-        </section>
-        <!-- end section: works -->
-
-        <!-- section: hobbies -->        
-        <section id="hobbies" class="section yellow">
+        <section class="blog-sec" id="estrutura">
             <div class="container">
-                <h4>Passatempos</h4>
-                <!-- Four columns -->
                 <div class="row">
-                    <div class="span3 animated-fast">
-                        <div class="hobby-box">
-                            <img src="img/hobbies/sports.png" alt="" />
-                            <h2 style="color: black">Atividades Físicas</h2>
-                            <p>
-                                Durante a semana vou à academia e nos finais de semana
-                                costumo correr ou pedalar.                                
-                                <br />
-                                <br />
-                            </p>
+                    <div class="col-md-12">
+                        <div class="heading text-md-center text-xs-center">
+                            <h2><small>Nossas instalações</small>Estrutura</h2>
                         </div>
                     </div>
-                    <div class="span3 animated">
-                        <div class="hobby-box">
-                            <img src="img/hobbies/medias.png" alt="" />
-                            <h2 style="color: black">Mídias</h2>
-                            <p>
-                                Fanático por música em especial Blues, Rock e Reggae. 
-                                Gosto de assistir filmes principalmente drama e suspense 
-                                e seguir algumas séries.
-                                <br />
-                            </p>
+                    <div class="col-md-4 blog-box">
+                        <h3 class="blog-title"><small>Academia</small></h3>
+                        <div class="blog-image-block"> <img src="img/blog-04.jpg" alt="" class="img-fluid"> </div>                        
+                    </div>
+                    <div class="col-md-4 blog-box">
+                        <h3 class="blog-title"><small>Odontologia</small></h3>
+                        <div class="blog-image-block"> <img src="img/blog-05.jpg" alt="" class="img-fluid"> </div>                        
+                    </div>
+                    <div class="col-md-4 blog-box">
+                        <h3 class="blog-title"><small>Bazar</small></h3>                        
+                        <div class="blog-image-block"> <img src="img/blog-06.jpg" alt="" class="img-fluid"> </div>                        
+                    </div>
+                    <div class="col-md-4 blog-box">
+                        <h3 class="blog-title"><small>Piscina</small></h3>
+                        <div class="blog-image-block"> <img src="img/blog-01.jpg" alt="" class="img-fluid"> </div>                        
+                    </div>
+                    <div class="col-md-4 blog-box">
+                        <h3 class="blog-title"><small>Fisioterapia</small></h3>
+                        <div class="blog-image-block"> <img src="img/blog-03.jpg" alt="" class="img-fluid"> </div>                        
+                    </div>        
+                    <div class="col-md-4 blog-box">
+                        <h3 class="blog-title"><small>Salão de eventos</small></h3>
+                        <div class="blog-image-block"> <img src="img/blog-02.jpg" alt="" class="img-fluid"> </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria
+         ================================================== -->
+
+        <section class="gallery-sec" id="galeria">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading text-md-center text-xs-center">
+                            <h2><small>Nossa história</small>Galeria de imagens</h2>
                         </div>
                     </div>
-                    <div class="span3 animated-fast">
-                        <div class="hobby-box">
-                            <img src="img/hobbies/recreation.png" alt="" />
-                            <h2 style="color: black">Encontros</h2>
-                            <p>
-                                Churrasco, barzinho, pubs, fazer boas amizades.
-                                Aprecio uma boa cerveja, alguns destilados, vinhos...
-                                Eventos de degustação de cervejas e vinhos fantasticos.
-                                <br />
-                                <br />
-                                <br />                                                                
-                            </p>
-                        </div>                        
-                    </div>
-                    <div class="span3 animated-slow">
-                        <div class="hobby-box">
-                            <img src="img/hobbies/travels.png" alt="" />
-                            <h2 style="color: black">Viagens</h2>
-                            <p>
-                                Acho que viagens são excenciais para renovar as energias,
-                                conhecer lugares e pessoas diferentes.
-                                <br />
-                                <br />
-                            </p>
+                    <div class="col-md-12"> 
+                        <!-- iso section -->
+                        <div class="iso-section text-md-center text-xs-center" data-wow-delay="0.5">
+
+                            <!-- iso box section -->
+                            <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+                                <div class="iso-box-wrapper col4-iso-box">
+                                    <div class="iso-box london paris ny col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-01.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-01.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box london ny hn col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-02.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-02.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box hn col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-03.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-03.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box london col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-04.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-04.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box ny col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-05.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-05.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box paris lunch col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-06.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-06.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+
+                                    <div class="iso-box london col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-07.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-07.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box ny col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-08.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-08.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box paris lunch col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-09.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-09.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    
+                                     <div class="iso-box london col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-10.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-10.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box ny col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-11.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-11.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                    <div class="iso-box paris lunch col-md-4 col-sm-6">
+                                        <div class="gallery-thumb"> <a href="img/photo-gallery-12.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-12.jpg" class="fluid-img" alt="Gallery">
+                                                <div class="gallery-overlay">
+                                                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                                                </div>
+                                            </a> </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end section: hobbies -->                      
 
-        <!-- section: contacts -->
-        <section id="contacts" class="section">
-            <div class="container" style="color: #138d75; font-size: larger">
-                <h4>Contatos</h4>
-                <p>
-                    <span class="fa fa-phone-square" title="Celular"> (16)9.8808-4625</span>
-                </p>
-                <hr />
-                <p>
-                    <span class="fa fa-envelope-square" title="E-mail"> marcelo.suares@yahoo.com.br</span>
-                </p>
-                <hr />
-                <p>
-                    <span class="fa fa-linkedin-square" title="Linkedin"> 
-                        <a href="https://www.linkedin.com/in/marcelosoaressilva" 
-                           target="_blank" 
-                           style="color: #138d75">
-                            marcelosoaressilva
-                        </a>
-                    </span>
-                </p>   
-                <hr />
-                <p>
-                    <span class="fa fa-facebook-square" title="Facebook"> 
-                        <a href="https://www.facebook.com/marcelo.soares.9678067" 
-                           target="_blank"
-                           style="color: #138d75">
-                            marcelo.soares
-                        </a>
-                    </span>
-                </p> 
+        <!-- Contato
+================================================== -->
+
+        <section class="contact-sec" id="contato">
+            <div class="container" style="color: #333333 !important">
+                <h2>Entre em contato <small>Estamos prontos a te atender</small> </h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Telefones: </label>
+                            <label><b>(16)3332-3448, (16)3333-7004</b></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email: </label>
+                            <label><b>udefa.araraquara@gmail.com</b></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Facebook: </label>
+                            <label><b><a href="https://pt-br.facebook.com/pages/category/Nonprofit-Organization/Uni%C3%A3o-dos-Deficientes-F%C3%ADsicos-de-Araraquara-UDEFA-268327789872507/" target="_blank" style="color: #0297FF">Página Udefa</a></b></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Endereço: </label>
+                            <label><b>Avenida Paulo da Silveira Ferraz, nº 627, Vila Xavier, Araraquara - SP</b></label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- end section: contacts -->   
-
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="span6 offset3">                     
-                        <img class="team-thumb img-circle" 
-                             src="img/logo.png" 
-                             style="width: 100px" 
-                             alt="Logo Marcelo" 
-                             />
-                    </div>
-                </div>
+                    <br />
+                    <br />
+                    <br />
+                </div>    
             </div>
-            <!-- ./container -->            
         </footer>
-        <a class="scrollup" onclick="goHome()" >
-            <i class="fa fa-angle-up fa-3x icon-square icon-bgdark icon-2x"></i>
-        </a>
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery.scrollTo.js"></script>
-        <script src="js/jquery.nav.js"></script>
-        <script src="js/jquery.localscroll-1.2.7-min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/jquery.prettyPhoto.js"></script>
-        <script src="js/isotope.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/inview.js"></script>
-        <script src="js/animate.js"></script>        
-        <script src="js/custom.js"></script>
 
+        <!-- Bootstrap core JavaScript
+            ================================================== --> 
+        <!-- Placed at the end of the document so the pages load faster --> 
+        <script src="js/jquery.min.js" ></script> 
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/scrollPosStyler.js"></script> 
+        <script src="js/swiper.min.js"></script> 
+        <script src="js/isotope.min.js"></script> 
+        <script src="js/nivo-lightbox.min.js"></script> 
+        <script src="js/wow.min.js"></script> 
+        <script src="js/core.js"></script> 
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     </body>
 </html>
